@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+}
+
+.background_pic {
+    background-image: url('images/background-extra-large.jpg');
+    background-repeat:repeat-x;
+}
+
+@media (min-width: 720px) {
+    .background_pic {
+        background-image: url('images/background-extra-large.jpg');
+    }
+}
+
+@media (min-width: 540px) {
+    .background_pic {
+        background-image: url('images/background-large.jpg');
+    }
+}
+
+@media (min-width: 432px) {
+    .background_pic {
+        background-image: url('images/background-medium.jpg');
+    }
+}
+
+@media (min-width: 288px) {
+    .background_pic {
+        background-image: url('images/background-small.jpg');
+    }
+}
+
+.background_pic {
+    background-image: url('images/background-extra-small.jpg');
+}
+
+h1 {
+    color: whitesmoke;
+    padding: 0;
+}
+
+.hero-section{
+    padding: 0;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    align-items: center;
+}
