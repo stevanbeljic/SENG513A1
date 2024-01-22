@@ -1,3 +1,7 @@
+/*
+    Source for adjusting background based on screen size: https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+*/
+
 header {
     padding-bottom: 0px;
 }
@@ -17,6 +21,8 @@ h1 {
     margin: 0px;
     box-shadow: 0px 2px 40px black;
 }
+
+/* Changes the background image of h1 depending on the screen size */
 
 @media (min-width: 2560px) {
     h1 {
@@ -120,7 +126,6 @@ button:active {
     .final-line::after {
         content: url('images/image-small.png');
         display: block;
-        clear: both;
     }
     
 }
@@ -129,6 +134,8 @@ button:active {
     background-color: rgba(0, 0, 0, 0.726);
     box-shadow: 0px 2px 20px black;
 }
+
+/* Changes the image depending on the screen size */
 
 @media (min-width: 320px) {
     .about-section .final-line::after {
