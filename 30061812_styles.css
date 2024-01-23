@@ -38,17 +38,11 @@ header {
         height:100%;
     }
 
-    /* Changes the background image of h1 depending on the screen size */
+    /* Breakpoints to change background image based on screen size */
 
-    @media (min-width: 2560px) {
+    @media (min-width: 768px) {
         header {
-            background-image: url(images/background-extra-large.jpg);
-        }
-    }
-
-    @media (min-width: 1920px) {
-        header {
-            background-image: url(images/background-large.jpg);
+            background-image: url(images/background-small.jpg);
         }
     }
 
@@ -58,11 +52,18 @@ header {
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1920px) {
         header {
-            background-image: url(images/background-small.jpg);
+            background-image: url(images/background-large.jpg);
         }
     }
+
+    @media (min-width: 2560px) {
+        header {
+            background-image: url(images/background-extra-large.jpg);
+        }
+    }
+
 }
 
 section {
@@ -151,7 +152,7 @@ button:active {
         display: block;
     }
 
-    /* Changes the image depending on the screen size */
+    /* Breakpoints to adjust the shown image based on screen size */
 
     @media (min-width: 320px) {
         .final-line::after {
