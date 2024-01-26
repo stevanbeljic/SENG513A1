@@ -8,6 +8,10 @@ section {
     padding: 10px;
 }
 
+body {
+    background-color: rgb(95, 95, 95);
+}
+
 button:active {
     transform: scale(1.1);
 }
@@ -19,24 +23,26 @@ button:active {
     background-position: bottom right;
     box-shadow: 0px 2px 20px black;
     height: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 
     h1 {
         color: whitesmoke;
         padding: 10px;
-        margin: 0px;
-    }
-
-    #logo {
-    display: block;
-    width: 15%;
-    height: 15%;
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
     }
 
     svg {
-        top: 0;
         left: 0;
         position: absolute;
-        width: 96.67px;
+        width: 12%;
+        max-height: 100px;
     }
 }
 
@@ -66,19 +72,21 @@ button:active {
 }
 
 .features-section {
+    position: relative;
     padding-left: 10%;
     padding-right: 10%;
-    margin: 0px;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
+    
 
-    background-color: rgb(162, 228, 179);
+    background-color: rgb(175, 177, 175);
     background-image: url(images/flourish.png);
     background-size: 10%;
 
     & .feature {
         margin: 20px auto;
+        border-bottom: none;
     }
 
     .feature:hover {
@@ -122,7 +130,7 @@ button:active {
 }
 
 .about-section {
-    background-color: rgb(162, 228, 179);
+    background-color: rgb(175, 177, 175);
 
     a {
         color:blue;
@@ -158,12 +166,6 @@ button:active {
 }
 
 .cta-section {
-    background-color: rgb(105, 103, 78);
+    background-color: rgb(95, 95, 95);
     box-shadow: 0px 2px 20px black;
 }
-
-body {
-    background-color: rgba(0, 0, 0, 0.726);
-}
-
-
