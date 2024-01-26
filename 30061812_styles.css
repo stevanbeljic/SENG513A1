@@ -24,8 +24,7 @@ button:active {
     background-size:cover;
     background-position: bottom right;
     box-shadow: 0px 2px 20px black;
-    height: 100px;
-    text-align: center;
+    height: 15vh;
     position: relative;
     display: flex;
     justify-content: start;
@@ -55,21 +54,9 @@ button:active {
         padding: 0;
         position: relative;
         height: auto;
-        width: 100px;
+        width: 10vw;
     }
 
-    /* Media queries to resize svg image if screen gets smaller */
-    @media (max-width: 900px){
-        svg {
-            max-width: 80px;
-        }
-    }
-
-    @media (max-width: 550px){
-        svg {
-            max-width: 50px;
-        }
-    }
 }
 
 /* Breakpoints to change background image based on screen size */
