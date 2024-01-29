@@ -193,12 +193,12 @@ button:active {
 
     /* Breakpoints to adjust the shown image based on screen size */
 
-    @media (min-width: 320px) {
+    @media (min-width: 320px) and (max-width: 639px) {
         .final-line::after {
             content: url('images/image-medium.png'); 
         }
     }
-    @media (min-width: 640px) {
+    @media (min-width: 640px) and (max-width: 1279px) {
         .final-line::after {
             content: url('images/image-large.png'); 
         }
