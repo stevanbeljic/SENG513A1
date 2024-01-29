@@ -26,7 +26,8 @@ button:active {
     box-shadow: 0px 2px 20px black;
     height: 15vh;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
     justify-content: start;
     /* Place the header above the features-section */
     z-index: 1;
@@ -37,12 +38,16 @@ button:active {
         align-items: center;
     }
 
+    & #title {
+        grid-column: 2 / 4;
+        place-self: center;
+    }
+
     h1 {
         /* Places the header in the center */
         color: whitesmoke;
         padding: 10px;
         margin-top: 40px;
-        position: absolute;
         top: 0;
         left: 0;
         text-align: center;
